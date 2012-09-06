@@ -1,3 +1,3 @@
-module Flechtwerk
+class Flechtwerk
   VERSION = "0.0.1"
 end
