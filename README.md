@@ -20,28 +20,32 @@ Or install it yourself as:
 
 ## Usage
 
+Create a connection object
+
+    graph = Flechtwerk.new
+
 Get the root node for the graph
 
-    Flechtwerk.root
+    graph.root
 
 Find a specific node by its it or node hash
 
-    Flechtwerk.find_node(id)
+    graph.find_node(id)
 
 Create a new node
 
-    Flechtwerk.create_node # empty node
-    Flechtwerk.update_node(id, { name: 'Testnode', size: 12 })
+    graph.create_node # empty node
+    graph.update_node(id, { name: 'Testnode', size: 12 })
 
 Change a nodes attributes
 
-    Flechtwerk.update_node(id, { name: 'Married node', age: 35 }) # resets all attributes
-    Flechtwerk.update_node_property(id, 'name', 'New name') # only changes the name attribute
-    Flechtwerk.delete_node_property(id, 'name') # removes only the name attribute
+    graph.update_node(id, { name: 'Married node', age: 35 }) # resets all attributes
+    graph.update_node_property(id, 'name', 'New name') # only changes the name attribute
+    graph.delete_node_property(id, 'name') # removes only the name attribute
 
 Delete a node
 
-    Flechtwerk.delete_node(id)
+    graph.delete_node(id)
 
 ## Contributing
 
