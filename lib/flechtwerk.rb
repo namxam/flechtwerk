@@ -65,6 +65,10 @@ class Flechtwerk
     end
   end
 
+  def exec_cypher(query, params = {})
+    post('/cypher', { 'query' => query, params => params })
+  end
+
   protected
 
   def url
